@@ -6,8 +6,10 @@
         {{$article->content}}
     </div>
     <h2 class="text-center mt-4">Комментарии: </h2>
+
+
     <script>
-        function getComment() {
+        /*function getComment() {
 
         function renderComment() {
             let card = document.createElement("div");
@@ -24,11 +26,11 @@
             card.append(cardHeader);
             card.append(cardBody);
             commentDiv.prepend(card);
-        }}
+        }}*/
 
     </script>
     <div class="col-sm-12 mx-auto">
-        <form action="/getCommentByArticleId" method="POST">
+        <form action="/addComment" method="POST">
             @csrf
             <div class="mx-auto">
                 <input class="form-control" name="content" type="text" placeholder="Добавить комментарий">

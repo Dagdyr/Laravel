@@ -43,10 +43,7 @@ class ArticleController extends Controller
         $content = $comments->content;
         $author_id = $comments->author_id;
         $comments  = [$author_id, $content];
-        return view('article', compact($comments));
-        /*return json_encode($comment);*/
-
-
+        /*return view('article', compact($comments));*/
     }
 
 
